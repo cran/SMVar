@@ -8,8 +8,10 @@ Example dataset for paired data
 \usage{data(Spleendata)}
 \format{
   Spleendata is a list with 2 elements
+\describe{
 \item{ SpleenGeneId}{Gene names)}
 \item{ SpleenLogRatio}{ Matrix with 4360 rows and 6 columns with normalized log-ratio}
+}
 }
 \source{
   Similar to the example dataset used in the package Varmixt

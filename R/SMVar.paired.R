@@ -17,7 +17,7 @@ nbgenes=dim(geneNumbers)[1]
 nbrep=dim(logratio)[2]
 ddl=nbrep-1
 invddl=1/ddl
-globind=apply(logratio,1,FUN=function(x){sum(is.finite(x))>=minrep})
+globind=apply(logratio,1,FUN=function(x){sum(is.finite(x))>=minrep& var(x,na.rm=TRUE)>0})
 
 globind=as.vector(which(globind==FALSE))
 
@@ -26,7 +26,7 @@ if (length(globind)>0)
 logratio=logratio[-globind,]
 geneNumbers=geneNumbers[-globind,]
 nbgenes=nbgenes-length(globind)
-print(paste(c("Warning:",(length(globind)),"gene(s) (is) are deleted because they have too many missing values"),collapse=" "))
+print(paste(c("Warning:",(length(globind)),"gene(s) (is) are deleted because of too many missing values or null variance"),collapse=" "))
 } 
 
 mean<-apply(logratio, 1, FUN = function(x) mean(x[is.finite(x)]))

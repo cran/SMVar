@@ -8,10 +8,12 @@ Example dataset for unpaired data
 \usage{data(ApoAIdata)}
 \format{
   ApoAIdata is a list with 3 elements
+\describe{
   \item{ApoAIGeneId}{ vector of fictive gene names)}
   \item{ApoAICond1}{ matrix with 6226 rows and 8 columns with normalized normal mice measurements}
   \item{ApoAICond2}{ matrix with 6226 rows and 8 columns with normalized KO mice measurements}
  }
+}
 \source{
   Similar to the example dataset used in the package Varmixt
 }

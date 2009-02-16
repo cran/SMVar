@@ -21,11 +21,12 @@ condi=listcond[[i]]
 assign(paste("nbrep",i,sep=""),dim(condi)[2])
 assign(paste("ddl",i,sep=""),get(paste("nbrep",i,sep=""))-1)
 assign(paste("invddl",i,sep=""),1/get(paste("ddl",i,sep="")))
-indcond=apply(condi,1,FUN=function(x){sum(is.finite(x))>=minrep})
+indcond=apply(condi,1,FUN=function(x){sum(is.finite(x))>=minrep& var(x,na.rm=TRUE)>0})
 assign(paste("indcond",i,sep=""),indcond)
 }
 
-globind=indcond1
+
+globind=get(paste("indcond",1,sep=""))
 for (i in 2:nbcond)
 {globind=globind & get(paste("indcond",i,sep=""))}
 
@@ -39,7 +40,7 @@ listcond[[i]]=listcond[[i]][-globind,]
 }
 geneNumbers=geneNumbers[-globind,]
 nbgenes=nbgenes-length(globind)
-print(paste(c("Warning:",(length(globind)),"gene(s) (is) are deleted because they have too many missing values"),collapse=" "))
+print(paste(c("Warning:",(length(globind)),"gene(s) (is) are deleted because of too many missing values or null variance"),collapse=" "))
 } 
 
 calcmRSS=function(datacond)

@@ -3,14 +3,14 @@
 \docType{package}
 \title{ Structural Model for Variances  }
 \description{
-Package containing modified t-tests to detect differentially expressed genes for paired and unpaired data}
+Package containing moderated t-tests to detect differentially expressed genes for paired and unpaired data}
 \details{
 \tabular{ll}{
 Package: \tab SMVar\cr
 Type: \tab Package\cr
-Version: \tab 1.2\cr
-Date: \tab 2008-09-10\cr
-License: \tab GPL (R version >=2.7.2)\cr
+Version: \tab 1.3\cr
+Date: \tab 2009-02-16\cr
+License: \tab GPL \cr
 }
 SMVar.unpaired and SMVar.paired are the most important functions. 
 }
