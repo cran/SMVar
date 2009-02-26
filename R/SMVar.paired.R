@@ -14,9 +14,6 @@ geneNumbers=data.frame(GeneId=rep(1:length(geneNumbers),1),geneNumbers)
 }
 stopifnot(dim(geneNumbers)[1]==dim(logratio)[1])
 nbgenes=dim(geneNumbers)[1]
-nbrep=dim(logratio)[2]
-ddl=nbrep-1
-invddl=1/ddl
 globind=apply(logratio,1,FUN=function(x){sum(is.finite(x))>=minrep& var(x,na.rm=TRUE)>0})
 
 globind=as.vector(which(globind==FALSE))
@@ -28,6 +25,10 @@ geneNumbers=geneNumbers[-globind,]
 nbgenes=nbgenes-length(globind)
 print(paste(c("Warning:",(length(globind)),"gene(s) (is) are deleted because of too many missing values or null variance"),collapse=" "))
 } 
+
+nbrep=dim(logratio)[2]
+ddl=nbrep-1
+invddl=1/ddl
 
 mean<-apply(logratio, 1, FUN = function(x) mean(x[is.finite(x)]))
 RSS<-apply(logratio - mean, 1, FUN = function(x) sum(x[is.finite(x)]^2))

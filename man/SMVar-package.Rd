@@ -8,8 +8,8 @@ Package containing moderated t-tests to detect differentially expressed genes fo
 \tabular{ll}{
 Package: \tab SMVar\cr
 Type: \tab Package\cr
-Version: \tab 1.3\cr
-Date: \tab 2009-02-16\cr
+Version: \tab 1.3.2\cr
+Date: \tab 2009-02-26\cr
 License: \tab GPL \cr
 }
 SMVar.unpaired and SMVar.paired are the most important functions. 

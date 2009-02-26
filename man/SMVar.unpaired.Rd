@@ -38,7 +38,7 @@ If the user creates an object when calling the function (for example "Stat=SMVar
 }
 \references{  F. Jaffrezic, Marot, G., Degrelle, S., Hue, I. and Foulley, J. L. (2007) A structural mixed model for variances in differential gene expression studies. Genetical Research (89) 19:25 
  }
-\author{ Guillemette Marot }
+\author{ Guillemette Marot with contributions from Anne de la Foye }
 \note{ If the first column of the file geneNumbers contains identical names for two different spots,
  these two spots are only counted once if they are both differentially expressed.
 By default, the correction for multiple testing is Benjamini Hochberg with a threshold of False Discovery Rate (FDR) of  5\%.
