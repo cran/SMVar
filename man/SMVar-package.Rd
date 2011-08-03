@@ -8,14 +8,14 @@ Package containing moderated t-tests to detect differentially expressed genes fo
 \tabular{ll}{
 Package: \tab SMVar\cr
 Type: \tab Package\cr
-Version: \tab 1.3.2\cr
-Date: \tab 2009-02-26\cr
+Version: \tab 1.3.3\cr
+Date: \tab 2011-08-03\cr
 License: \tab GPL \cr
 }
 SMVar.unpaired and SMVar.paired are the most important functions. 
 }
 \author{
-Guillemette Marot <guillemette.marot@jouy.inra.fr>
+Guillemette Marot <guillemette.marot@inria.fr>
 }
 \references{
 F. Jaffrezic, Marot, G., Degrelle, S., Hue, I. and Foulley, J. L. (2007) A structural mixed model for variances in differential gene expression studies. Genetical Research (89) 19:25 

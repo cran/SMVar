@@ -1,0 +1,11 @@
+e784cd1ee2eff41fbedfe1c669cdd83b *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+2f2ac93532eb42fab568bca6b2aa1ebc *R/SMVar.paired.R
+1e4f62006f07e38227ce40221212990f *R/SMVar.unpaired.R
+3d504dd1e07ad4af2d6696250731b9cc *data/ApoAIdata.rda
+a47b52262c472e5361797688ef253f09 *data/Spleendata.rda
+23acf14df96713223f13ef10358e3623 *man/ApoAIdata.Rd
+f270b03a6bb32e10ce4c604ec68fb025 *man/SMVar-package.Rd
+b0eda1c6ac3928a8a8cf36421fe4a972 *man/SMVar.paired.Rd
+3383029829dc7b54aeeecda0d7a170e9 *man/SMVar.unpaired.Rd
+23e591e86f16b78e99b9554d2c6b9aa8 *man/Spleendata.Rd
