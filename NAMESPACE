@@ -1,5 +1,5 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
+importFrom("stats", "p.adjust", "pt", "var")
+importFrom("utils", "write.table")
 
 # Export all names
 exportPattern(".")

@@ -6,7 +6,8 @@
   Function to detect differentially expressed genes when data are unpaired
 }
 \usage{
-SMVar.unpaired(geneNumbers, listcond, fileexport = NULL, minrep = 2, method = "BH", threshold = 0.05)
+SMVar.unpaired(geneNumbers, listcond, fileexport = NULL,
+               minrep = 2, method = "BH", threshold = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

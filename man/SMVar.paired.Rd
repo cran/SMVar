@@ -6,7 +6,8 @@
   Function to detect differentially expressed genes when data are paired
 }
 \usage{
-SMVar.paired(geneNumbers, logratio, fileexport = NULL, minrep = 2, method = "BH", threshold = 0.05)
+SMVar.paired(geneNumbers, logratio, fileexport = NULL, 
+            minrep = 2, method = "BH", threshold = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
